@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For U, Nabila</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Floating Hearts Animation -->
+    <div class="hearts-animation" id="hearts-container"></div>
+    
+    <!-- Audio Player (Hidden) -->
+    <audio id="bgm" loop>
+        <source src="coquette_bgm.opus" type="audio/ogg; codecs=opus">
+        <!-- Ganti dengan URL BGM yang valid -->
+    </audio>
+    
+    <!-- Audio Controls -->
+    <div class="audio-controls">
+        <span>Music:</span>
+        <button class="audio-btn" id="audio-toggle">
+            <i class="fas fa-volume-mute"></i>
+        </button>
+    </div>
+    
+    <!-- Welcome Popup -->
+    <div class="overlay" id="welcome-popup">
+        <div class="popup">
+            <h2>Haii Nabila 💖</h2>
+            <p>Ini adalah pesan spesial yang kutulis sendiri khusus untukmu. Aku harap kamu menyukainya dan bisa merasakan ketulusan yang ingin kusampaikan.</p>
+            <button class="btn" id="read-btn">Baca</button>
+        </div>
+    </div>
+    
+    <div class="container">
+        <h2 class="title">✨ Pesan Buat Kamu ✨</h2>
+        <div class="card">
+            <div class="message active" id="message-1">
+                Halo Nabilaa... Selamat datang, ini semua adalah pesan spesial dariku untukmu. 
+                Ada yang ingin aku sampaikan padamu. Tekan tombol "Next" untuk membaca pesan selanjutnya...
+            </div>
+            <div class="message" id="message-2">
+                Aku hanya ingin kamu tahu bahwa waktu yang kita habiskan bersama 
+                sangat berarti bagiku. Kenangan-kenangan itu akan selalu kusimpan.
+            </div>
+            <div class="message" id="message-3">
+                Mungkin kita tidak selalu bersama, tapi aku ingin kamu tahu 
+                bahwa kamu selalu punya tempat spesial di hatiku.
+            </div>
+            <div class="message" id="message-4">
+                Terima kasih telah menjadi bagian dari perjalanan hidupku. 
+                Kamu mengajarkanku banyak hal tentang hidup dan cinta.
+            </div>
+            <div class="message" id="message-5">
+                Apapun yang terjadi nanti, aku harap kamu selalu bahagia. 
+                Kamu berhak mendapatkan semua kebahagiaan di dunia ini.
+            </div>
+            <div class="message" id="message-6">
+                Jika kamu ingin berbicara denganku, aku masih di sini untukmu.
+            </div>
+            <div class="message" id="message-6">
+                Jika kamu ingin berbicara denganku, aku masih di sini untukmu.
+            </div>
+            <div class="message" id="message-6">
+                Jika kamu ingin berbicara denganku, aku masih di sini untukmu.
+            </div>
+            <div class="message" id="message-6">
+                Jika kamu ingin berbicara denganku, aku masih di sini untukmu.
+            </div>
+            
+            <!-- Bagian final yang akan muncul setelah semua pesan dibaca -->
+            <div class="final-section" id="final-section">
+                <h1>Chat Juan</h1>
+                <a href="https://wa.me/+6288805385353" class="wa-button">
+                    <i class="fab fa-whatsapp"></i> Hubungi Sekarang
+                </a>
+            </div>
+        </div>
+        
+        <div class="buttons">
+            <button class="btn" id="rewind-btn" disabled>
+                <i class="fas fa-chevron-left"></i> Rewind
+            </button>
+            <button class="btn" id="next-btn">
+                Next <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
