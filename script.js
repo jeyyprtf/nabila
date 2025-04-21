@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let isPlaying = false;
     
     tryPlayAudio();
+    isPlaying = true;
 
     // Popup handling
     readBtn.addEventListener('click', () => {
