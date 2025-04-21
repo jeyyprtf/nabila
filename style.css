@@ -69,6 +69,17 @@ body {
     display: none;
 }
 
+.message img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
 .message.active {
     display: block;
     animation: fadeIn 0.5s ease;

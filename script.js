@@ -12,8 +12,10 @@ document.addEventListener('DOMContentLoaded', () => {
     let currentIndex = 0;
     let isPlaying = false;
     
-    tryPlayAudio();
     isPlaying = true;
+    audioToggle.innerHTML = '<i class="fas fa-volume-up"></i>';
+
+    tryPlayAudio();
 
     // Popup handling
     readBtn.addEventListener('click', () => {
@@ -23,6 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 500);
         
         // Auto play music when popup is closed (if browser allows)
+        tryPlayAudio();
     });
     
     // Audio Controls
