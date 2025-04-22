@@ -7,7 +7,7 @@
 }
 
 body {
-    background-image: url('/api/placeholder/1920/1080');
+    background-image: url(background.webp);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
